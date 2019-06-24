@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="63" id="7Ev-HA-qep" customClass="SegmentedCell" customModule="synema" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Ev-HA-qep" id="ZZn-L8-LlK">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fNG-Kf-nuV">
+                        <rect key="frame" x="120.5" y="16" width="173" height="31.5"/>
+                        <segments>
+                            <segment title="Detail"/>
+                            <segment title="Trailer"/>
+                            <segment title="Review"/>
+                        </segments>
+                        <connections>
+                            <action selector="segmentAction:" destination="7Ev-HA-qep" eventType="valueChanged" id="f6n-es-m46"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fNG-Kf-nuV" secondAttribute="bottom" constant="16" id="9NO-H0-EZb"/>
+                    <constraint firstItem="fNG-Kf-nuV" firstAttribute="top" secondItem="ZZn-L8-LlK" secondAttribute="top" constant="16" id="Sgn-V2-T7j"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fNG-Kf-nuV" secondAttribute="trailing" constant="8" id="jDs-1r-6JQ"/>
+                    <constraint firstItem="fNG-Kf-nuV" firstAttribute="centerX" secondItem="ZZn-L8-LlK" secondAttribute="centerX" id="slf-ad-4JT"/>
+                    <constraint firstItem="fNG-Kf-nuV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZZn-L8-LlK" secondAttribute="leading" constant="8" id="xWr-aU-qRx"/>
+                    <constraint firstItem="fNG-Kf-nuV" firstAttribute="centerY" secondItem="ZZn-L8-LlK" secondAttribute="centerY" id="yzq-XK-6mN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="segment" destination="fNG-Kf-nuV" id="bgV-Jp-KGk"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="88.727678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
