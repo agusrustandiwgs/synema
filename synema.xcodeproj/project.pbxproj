@@ -38,8 +38,6 @@
 		CED5489422BFF40B00C59F4C /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5488E22BFF40B00C59F4C /* DiscoverViewController.swift */; };
 		CED5489522BFF40B00C59F4C /* DiscoverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5488F22BFF40B00C59F4C /* DiscoverInteractor.swift */; };
 		CED5489722C007C800C59F4C /* DiscoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED5489622C007C800C59F4C /* DiscoverView.xib */; };
-		CED5489A22C06D7500C59F4C /* MovieCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED5489922C06D7500C59F4C /* MovieCollectionCell.xib */; };
-		CED5489C22C06DFE00C59F4C /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5489B22C06DFE00C59F4C /* MovieCollectionCell.swift */; };
 		CED548B322C0881C00C59F4C /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED548AD22C0881C00C59F4C /* MovieDetailPresenter.swift */; };
 		CED548B422C0881C00C59F4C /* MovieDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED548AE22C0881C00C59F4C /* MovieDetailWorker.swift */; };
 		CED548B522C0881C00C59F4C /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED548AF22C0881C00C59F4C /* MovieDetailRouter.swift */; };
@@ -119,8 +117,6 @@
 		CED5488E22BFF40B00C59F4C /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		CED5488F22BFF40B00C59F4C /* DiscoverInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverInteractor.swift; sourceTree = "<group>"; };
 		CED5489622C007C800C59F4C /* DiscoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverView.xib; sourceTree = "<group>"; };
-		CED5489922C06D7500C59F4C /* MovieCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionCell.xib; sourceTree = "<group>"; };
-		CED5489B22C06DFE00C59F4C /* MovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
 		CED548AD22C0881C00C59F4C /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		CED548AE22C0881C00C59F4C /* MovieDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailWorker.swift; sourceTree = "<group>"; };
 		CED548AF22C0881C00C59F4C /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
@@ -329,8 +325,6 @@
 		CED5489822C06D5E00C59F4C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CED5489922C06D7500C59F4C /* MovieCollectionCell.xib */,
-				CED5489B22C06DFE00C59F4C /* MovieCollectionCell.swift */,
 				CED548B922C0982800C59F4C /* SegmentedCell.xib */,
 				CED548BB22C098A900C59F4C /* SegmentedCell.swift */,
 				CED548BD22C09AED00C59F4C /* TrailerThumbnailCell.xib */,
@@ -468,7 +462,6 @@
 				CED548BE22C09AED00C59F4C /* TrailerThumbnailCell.xib in Resources */,
 				CED548C422C0AA3300C59F4C /* MovieCell.xib in Resources */,
 				CE76428522BC8E3C00A292A0 /* LaunchScreen.storyboard in Resources */,
-				CED5489A22C06D7500C59F4C /* MovieCollectionCell.xib in Resources */,
 				CE76428222BC8E3C00A292A0 /* Assets.xcassets in Resources */,
 				CED548BA22C0982800C59F4C /* SegmentedCell.xib in Resources */,
 				CE76428022BC8E3A00A292A0 /* Main.storyboard in Resources */,
@@ -547,8 +540,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-synema/Pods-synema-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -561,8 +552,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -603,7 +592,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED5489C22C06DFE00C59F4C /* MovieCollectionCell.swift in Sources */,
 				CED5487A22BFDA1F00C59F4C /* GenreListPresenter.swift in Sources */,
 				CED5486622BFC06C00C59F4C /* BaseTableVC.swift in Sources */,
 				CED5487D22BFDA1F00C59F4C /* GenreListModels.swift in Sources */,
